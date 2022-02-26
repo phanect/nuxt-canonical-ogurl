@@ -1,0 +1,23 @@
+{
+  "name": "nuxt-canonical-ogurl",
+  "version": "1.0.0",
+  "description": "A Nuxt module to automatically generate canonical and og:url meta tags",
+  "keywords": [
+    "nuxt",
+    "canonical",
+    "opengraph"
+  ],
+  "author": "Jumpei Ogawa <phanective@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.x"
+  },
+  "scripts": {
+    "lint": "eslint --ext=.js,.ts,.vue --ignore-path .gitignore .",
+    "release": "npm publish --access public --non-interactive"
+  },
+  "devDependencies": {
+    "@phanect/eslint-plugin": "latest",
+    "eslint": "^8.10.0"
+  }
+}
