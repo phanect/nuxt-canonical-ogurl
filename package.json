@@ -1,6 +1,6 @@
 {
   "name": "nuxt-canonical-ogurl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Nuxt module to automatically generate canonical and og:url meta tags",
   "keywords": [
     "nuxt",
