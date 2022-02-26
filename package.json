@@ -12,6 +12,7 @@
   "engines": {
     "node": ">=14.x"
   },
+  "main": "./lib/module.js",
   "scripts": {
     "lint": "eslint --ext=.js,.ts,.vue --ignore-path .gitignore .",
     "release": "npm publish --access public --non-interactive"
