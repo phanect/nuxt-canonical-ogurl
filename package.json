@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=14.x"
   },
-  "main": "./lib/module.js",
+  "main": "./libs/module.js",
   "scripts": {
     "test": "jest --verbose",
     "lint": "eslint --ext=.js,.ts,.vue --ignore-path .gitignore .",
