@@ -1,6 +1,6 @@
 {
   "name": "nuxt-canonical-ogurl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Nuxt module to automatically generate canonical and og:url meta tags",
   "keywords": [
     "nuxt",
@@ -12,7 +12,7 @@
   "engines": {
     "node": ">=14.x"
   },
-  "main": "./lib/module.js",
+  "main": "./libs/module.js",
   "scripts": {
     "test": "jest --verbose",
     "lint": "eslint --ext=.js,.ts,.vue --ignore-path .gitignore .",
