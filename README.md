@@ -2,6 +2,39 @@
 
 A Nuxt module to automatically generate canonical and og:url meta tags
 
+# Deprecation Notice
+
+This module is deprecated because it only works with Nuxt 2.
+On Nuxt 3, this module is not required to automatically add `canonical` and `og:url`.
+
+To automatically add `canonical` and `og:url`, try following code in app.vue:
+
+```vue
+<template>
+  <div>
+    <NuxtLayout>
+      <NuxtPage/>
+    </NuxtLayout>
+  </div>
+</template>
+
+<script setup>
+const route = useRoute();
+
+const canonical = `https://example.com${route.path.replace(/\/$/, "")}`; // without trailing slash
+const canonicalWithSlash = `https://example.com${route.path.replace(/\/$/, "")}/`; // with trailing slash
+
+useHead({
+  meta: [
+    { name: "og:url", content: canonical },
+  ],
+  link: [
+    { rel: "canonical", href: canonical },
+  ],
+});
+</script>
+```
+
 # Set up
 
 1. Add `nuxt-canonical-ogurl` to the dependency in your project
