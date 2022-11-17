@@ -2,22 +2,21 @@
 
 module.exports = {
   root: true,
-  extends: "plugin:@phanect/plain",
+  extends: "phanective/plain",
 
   env: {
     browser: true,
     node: true,
   },
-  plugins: [ "@phanect" ],
 
   overrides: [
     {
       files: [ "tests/**/*.test.js" ],
-      extends: "plugin:@phanect/jest",
+      extends: "phanective/jest",
     },
     {
       files: [ "tests/fixtures/**/*.js", "tests/fixtures/**/*.vue" ],
-      extends: "plugin:@phanect/nuxt+js",
+      extends: "phanective/nuxt+js",
       parserOptions: {
         sourceType: "module",
       },
