@@ -19,8 +19,8 @@
     "release": "npm publish --access public --non-interactive"
   },
   "devDependencies": {
-    "@phanect/eslint-plugin": "latest",
     "eslint": "^8.10.0",
+    "eslint-config-phanective": "latest",
     "jest": "^27.5.1",
     "jsdom": "^19.0.0",
     "nuxt": "^2.15.8"
